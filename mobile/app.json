@@ -1,0 +1,18 @@
+{
+  "expo": {
+    "name": "Archi AI Exam Prep",
+    "slug": "archi-ai-exam-prep",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.examprep.quizgen"
+    },
+    "web": {
+      "bundler": "metro"
+    }
+  }
+}

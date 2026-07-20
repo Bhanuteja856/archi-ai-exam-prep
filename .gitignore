@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+server/node_modules/
+mobile/node_modules/
+
+# Environment Variables & API Keys
+.env
+server/.env
+
+# Expo & Build Artifacts
+.expo/
+mobile/.expo/
+dist/
+web-build/
+*.apk
+*.aab
+
+# Logs
+*.log
+npm-debug.log*
