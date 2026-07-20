@@ -2,6 +2,7 @@
   "expo": {
     "name": "Archi AI Exam Prep",
     "slug": "archi-ai-exam-prep",
+    "owner": "bobby856",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -23,6 +24,11 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "ad96dc1e-bfd5-4498-ad4c-f5878b6f8c82"
+      }
     }
   }
 }
