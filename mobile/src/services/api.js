@@ -1,12 +1,7 @@
-// API Service connecting Frontend to Backend Express Server
 
-// Default backend server URL (works on web browser & emulator)
-// Note: On physical Android device testing over Wi-Fi, change this to your PC's IP (e.g., http://192.168.1.5:5000)
-export const BASE_URL = 'http://localhost:5000';
+export const BASE_URL = 'https://archi-ai-exam-prep.onrender.com';
 
-/**
- * Health check to verify server connectivity
- */
+
 export async function checkServerHealth() {
   try {
     const response = await fetch(`${BASE_URL}/api/health`);
@@ -24,7 +19,6 @@ export async function checkServerHealth() {
 export async function generateQuizFromPDF({ file, questionCount = 5, difficulty = 'medium', timerMinutes = 10 }) {
   try {
     const formData = new FormData();
-
     if (file.file) {
       // Browser File object
       formData.append('file', file.file);

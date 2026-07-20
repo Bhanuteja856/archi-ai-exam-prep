@@ -11,7 +11,8 @@ import {
   TextInput,
   StatusBar,
   Dimensions,
-  Platform
+  Platform,
+  Image
 } from 'react-native';
 import { generateQuizFromPDF } from './src/services/api';
 import {
@@ -378,9 +379,11 @@ export default function App() {
       <View style={styles.authCard}>
         {/* Glow Header */}
         <View style={styles.authHeaderBox}>
-          <View style={styles.authLogoBadge}>
-            <Text style={{ fontSize: 32 }}>🎓</Text>
-          </View>
+          <Image
+            source={require('./assets/icon.png')}
+            style={{ width: 64, height: 64, borderRadius: 16, marginBottom: 10 }}
+            resizeMode="contain"
+          />
           <Text style={styles.authTitle}>Archi AI Exam Prep</Text>
           <Text style={styles.authSub}>Turn study PDFs into AI exam questions in seconds</Text>
         </View>
@@ -1040,8 +1043,16 @@ export default function App() {
 
       {/* Modern Top Navbar */}
       <View style={styles.navbarHeader}>
-        <TouchableOpacity onPress={() => setCurrentScreen(currentUser ? 'home' : 'login')}>
-          <Text style={styles.navbarBrandTitle}>🎓 Archi AI Exam Prep</Text>
+        <TouchableOpacity
+          style={{ flexDirection: 'row', alignItems: 'center', gap: 8 }}
+          onPress={() => setCurrentScreen(currentUser ? 'home' : 'login')}
+        >
+          <Image
+            source={require('./assets/icon.png')}
+            style={{ width: 28, height: 28, borderRadius: 6 }}
+            resizeMode="contain"
+          />
+          <Text style={styles.navbarBrandTitle}>Archi AI Exam Prep</Text>
         </TouchableOpacity>
 
         {currentUser ? (
