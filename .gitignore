@@ -18,3 +18,17 @@ web-build/
 # Logs
 *.log
 npm-debug.log*
+
+# Python & Virtual Environments
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+server/agent/venv/
+server/agent/__pycache__/
+
+# IDE & Editor files
+.vscode/
+.DS_Store
+Thumbs.db
